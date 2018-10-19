@@ -164,6 +164,7 @@ public class Waypoint : MonoBehaviour
 
 		_scale					= Mathf.Lerp(_scale, scale, lerp_focus);
 		_color					= Color.Lerp(_color, color,	lerp_focus);
+		transform.Rotate(0.0f, 100*Time.deltaTime, 0.0f, Space.Self);
 	}
 
 
