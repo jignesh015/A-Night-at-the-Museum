@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Waypoint : MonoBehaviour
 {
@@ -56,6 +57,10 @@ public class Waypoint : MonoBehaviour
 
 	public PlayVideo videoObject;
 
+	public Canvas sliderCanvas;
+
+	public Slider slider;
+
 	void Awake()
 	{		
 		_material					= Instantiate(material);
@@ -64,6 +69,7 @@ public class Waypoint : MonoBehaviour
 		_audio_source				= gameObject.GetComponent<AudioSource>();	
 		_audio_source.clip		 	= clip_click;
 		_audio_source.playOnAwake 	= false;
+		slider.maxValue = 1.5f;
 	}
 
 
@@ -115,7 +121,11 @@ public class Waypoint : MonoBehaviour
 		_animated_lerp														= Mathf.Abs(Mathf.Cos(Time.time * scale_animation));
 
 		if (pointerFlag) {
-			if ((Time.time - enterTime) > 1.5f) {
+			//Sets the progress slider value
+			float sliderValue = Time.time - enterTime;
+			slider.value = sliderValue;
+
+			if ((Time.time - enterTime) > slider.maxValue) {
 				Click ();
 				pointerFlag = false;
 			}
@@ -128,6 +138,8 @@ public class Waypoint : MonoBehaviour
 		_state = _state == State.Idle ? State.Focused : _state;
 		pointerFlag = true;
 		enterTime = Time.time;
+
+
 	}
 
 
@@ -135,6 +147,7 @@ public class Waypoint : MonoBehaviour
 	{
 		_state = State.Idle;
 		pointerFlag = false;
+		sliderCanvas.gameObject.SetActive (false);
 	}
 
 
@@ -148,6 +161,9 @@ public class Waypoint : MonoBehaviour
 
 		//Reset videoplayers when user moves
 		videoObject.ResetAll ();
+
+		//Reset progress slider value
+		slider.value = 0.0f;
 	}
 
 
@@ -166,6 +182,8 @@ public class Waypoint : MonoBehaviour
 		Renderer renderer = gameObject.GetComponentInChildren<Renderer> ();
 		Color emissionColor = new Color (0.14f, 0.35f, 0.0f, 0.2f);
 		renderer.material.SetColor("_EmissionColor", emissionColor);
+
+		sliderCanvas.gameObject.SetActive (true);
 	}
 
 
