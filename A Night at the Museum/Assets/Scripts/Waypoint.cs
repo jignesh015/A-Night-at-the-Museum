@@ -54,6 +54,7 @@ public class Waypoint : MonoBehaviour
 	private float enterTime;
 	private bool pointerFlag = false;
 
+	public PlayVideo videoObject;
 
 	void Awake()
 	{		
@@ -144,6 +145,8 @@ public class Waypoint : MonoBehaviour
 		_audio_source.Play();
 
 		Camera.main.transform.parent.transform.position = gameObject.transform.position;
+
+		videoObject.ResetAll ();
 	}
 
 
