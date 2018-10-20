@@ -146,6 +146,7 @@ public class Waypoint : MonoBehaviour
 
 		Camera.main.transform.parent.transform.position = gameObject.transform.position;
 
+		//Reset videoplayers when user moves
 		videoObject.ResetAll ();
 	}
 

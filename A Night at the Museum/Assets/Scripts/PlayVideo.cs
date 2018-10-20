@@ -48,8 +48,10 @@ public class PlayVideo : MonoBehaviour {
 	public void TogglePause(int index) {
 		if (videoplayers [index].isPlaying) {
 			videoplayers [index].Pause ();
+			playButtons [index].SetActive (true);
 		} else {
 			videoplayers [index].Play ();
+			playButtons [index].SetActive (false);
 		}
 	}
 }
