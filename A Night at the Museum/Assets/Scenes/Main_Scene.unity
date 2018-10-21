@@ -681,9 +681,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "HaptX Gloves\u2122 are the world\u2019s first industrial-grade haptic wearable.
-    It\u2019s the only glove to deliver high-fidelity tactile feedback and up to five
-    pounds of force feedback per finger."
+  m_Text: The Virtuix Omni is an omnidirectional treadmill simulator for virtual reality
+    games and other applications. It uses a platform to simulate locomotion i.e. the
+    motion of walking, requiring both special shoes or shoe covers and a surface that
+    reduces friction.
 --- !u!222 &158234716
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -836,7 +837,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 199604432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1452302739}
@@ -844,7 +845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 0, y: 54.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199604434
@@ -879,7 +880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Haptic Gloves
+  m_Text: Hardlight Suit
 --- !u!222 &199604435
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -910,7 +911,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203460477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 690613428}
@@ -918,7 +919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 0, y: 62.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203460479
@@ -2209,7 +2210,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 437375395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 960394600}
@@ -2217,7 +2218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 1.8, y: 54.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437375397
@@ -2252,7 +2253,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Haptic Gloves
+  m_Text: VRGO Chair
 --- !u!222 &437375398
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2522,9 +2523,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "HaptX Gloves\u2122 are the world\u2019s first industrial-grade haptic wearable.
-    It\u2019s the only glove to deliver high-fidelity tactile feedback and up to five
-    pounds of force feedback per finger."
+  m_Text: "The Taclim VR shoes give haptic feedback when playing VR games so it feels
+    like you're walking on grass or sand, or wading in water.\r\n"
 --- !u!222 &503899174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2649,7 +2649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 0, y: 52.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558873830
@@ -2684,7 +2684,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Haptic Gloves
+  m_Text: Virtuix Omni
 --- !u!222 &558873831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3811,15 +3811,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 948825098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.91182005, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833207417}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: 0, y: 58.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948825100
@@ -3843,7 +3843,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4eedafad5084240419e649245c7b2093, type: 3}
-    m_FontSize: 30
+    m_FontSize: 27
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -3854,7 +3854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Haptic Gloves
+  m_Text: Taclim VR shoes
 --- !u!222 &948825101
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4664,7 +4664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -32.3}
+  m_AnchoredPosition: {x: 0.2, y: -32.3}
   m_SizeDelta: {x: 275, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1181089049
@@ -4699,9 +4699,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "HaptX Gloves\u2122 are the world\u2019s first industrial-grade haptic wearable.
-    It\u2019s the only glove to deliver high-fidelity tactile feedback and up to five
-    pounds of force feedback per finger."
+  m_Text: The VRGO is a locomotion gamepad chair for VR. It connects wirelessly over
+    Bluetooth as a gamepad or keyboard and works by titling in the direction you want
+    to move.
 --- !u!222 &1181089050
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6408,7 +6408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -32.3}
+  m_AnchoredPosition: {x: 6.6, y: -32.3}
   m_SizeDelta: {x: 275, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658679559
@@ -6443,9 +6443,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "HaptX Gloves\u2122 are the world\u2019s first industrial-grade haptic wearable.
-    It\u2019s the only glove to deliver high-fidelity tactile feedback and up to five
-    pounds of force feedback per finger."
+  m_Text: Suit up to feel the thrill of every explosion, gunshot, and sword fight
+    in VR. Hardlight's patented pattern of 16 unique haptic feedback zones target
+    every muscle group responsible for delivering each real, gut wrenching reaction.
 --- !u!222 &1658679560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6699,14 +6699,14 @@ RectTransform:
   m_GameObject: {fileID: 1743901706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9872699, y: 1.1610882, z: 1}
   m_Children: []
   m_Father: {fileID: 766382303}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: -0.3, y: 47.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743901708
@@ -6730,7 +6730,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4eedafad5084240419e649245c7b2093, type: 3}
-    m_FontSize: 30
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -6741,7 +6741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Haptic Gloves
+  m_Text: MindTrek VR Arena
 --- !u!222 &1743901709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7194,7 +7194,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945734943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.70602435, y: 0.49547207, z: 1}
   m_Children: []
   m_Father: {fileID: 766382303}
@@ -7202,7 +7202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -32.3}
+  m_AnchoredPosition: {x: 5.8, y: -29}
   m_SizeDelta: {x: 275, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945734945
@@ -7237,9 +7237,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "HaptX Gloves\u2122 are the world\u2019s first industrial-grade haptic wearable.
-    It\u2019s the only glove to deliver high-fidelity tactile feedback and up to five
-    pounds of force feedback per finger."
+  m_Text: MindTrek VR, powered by Zero Latency, is a free-roam, large-scale multiplayer
+    virtual reality gaming arena.
 --- !u!222 &1945734946
 CanvasRenderer:
   m_ObjectHideFlags: 0
