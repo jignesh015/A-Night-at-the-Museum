@@ -70,6 +70,7 @@ public class Waypoint : MonoBehaviour
 		_audio_source.clip		 	= clip_click;
 		_audio_source.playOnAwake 	= false;
 		slider.maxValue = 1.5f;
+		sliderCanvas.gameObject.SetActive (false);
 	}
 
 
