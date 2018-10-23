@@ -20,9 +20,15 @@ public class PlayVideo : MonoBehaviour {
 
 	public Slider slider;
 
+	public Slider startSlider;
+
+	public GameObject welcomeScreen;
+
 	private float enterTime;
 	private bool pointerFlag = false;
 	private int buttonIndex;
+	private int startScreenBtnIndex;
+	private string pointedObj;
 
 	private Vector3 pausePos = new Vector3 (0f, -0.5f, 0f);
 	private Vector3 playPos = new Vector3 (0f, 0.5f, 0f);
@@ -43,24 +49,51 @@ public class PlayVideo : MonoBehaviour {
 			//Sets the progress slider value
 			float sliderValue = Time.time - enterTime;
 			slider.value = sliderValue;
+			startSlider.value = sliderValue;
 
 			if ((Time.time - enterTime) > slider.maxValue) {
-				PlayButtonClicked (buttonIndex);
+				if(pointedObj == "playBtn") {
+					PlayButtonClicked (buttonIndex);
+				}else if(pointedObj == "welcomeScreenBtn"){
+					StartTour (startScreenBtnIndex);
+				}
 				pointerFlag = false;
 			}
 		}
 	}
 
-	public void pointerEnter(int index) {
+	public void PointerEnter(int index) {
 		pointerFlag = true;
 		enterTime = Time.time;
 		sliderCanvas.gameObject.SetActive (true);
-		buttonIndex = index;
+
+		if (index >= 10) {
+			pointedObj = "welcomeScreenBtn";
+			startScreenBtnIndex = index;
+			startSlider.gameObject.SetActive (true);
+		} else {
+			buttonIndex = index;
+			pointedObj = "playBtn";
+		}
 	}
 
-	public void pointerExit() {
+	public void PointerExit() {
 		pointerFlag = false;
 		sliderCanvas.gameObject.SetActive (false);
+		startSlider.gameObject.SetActive (false);
+	}
+
+
+	public void StartTour(int btnIndex) {
+		if (btnIndex == 10) {
+			welcomeScreen.transform.GetChild (0).gameObject.SetActive (false);
+			welcomeScreen.transform.GetChild (1).gameObject.SetActive (true);
+			startSlider.gameObject.SetActive (false);
+		} else {
+			welcomeScreen.SetActive (false);
+			startSlider.gameObject.SetActive (false);
+			sliderCanvas.gameObject.SetActive (false);
+		}
 	}
 
 	//Play video on click of Play button
@@ -98,5 +131,7 @@ public class PlayVideo : MonoBehaviour {
 			playButtons [index].transform.position += pausePos;
 		}
 	}
+
+
 
 }
