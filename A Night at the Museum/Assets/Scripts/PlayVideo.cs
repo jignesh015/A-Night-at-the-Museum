@@ -24,11 +24,14 @@ public class PlayVideo : MonoBehaviour {
 
 	public GameObject welcomeScreen;
 
+	public AudioSource startScreenAudio;
+
 	private float enterTime;
 	private bool pointerFlag = false;
 	private int buttonIndex;
 	private int startScreenBtnIndex;
 	private string pointedObj;
+	private AudioSource playBtnAudio;
 
 	private Vector3 pausePos = new Vector3 (0f, -0.5f, 0f);
 	private Vector3 playPos = new Vector3 (0f, 0.5f, 0f);
@@ -85,10 +88,12 @@ public class PlayVideo : MonoBehaviour {
 
 
 	public void StartTour(int btnIndex) {
+		startScreenAudio.Play ();
 		if (btnIndex == 10) {
-			welcomeScreen.transform.GetChild (0).gameObject.SetActive (false);
+			//welcomeScreen.transform.GetChild (0).gameObject.SetActive (false);
 			welcomeScreen.transform.GetChild (1).gameObject.SetActive (true);
 			startSlider.gameObject.SetActive (false);
+
 		} else {
 			welcomeScreen.SetActive (false);
 			startSlider.gameObject.SetActive (false);
@@ -130,6 +135,8 @@ public class PlayVideo : MonoBehaviour {
 		
 			playButtons [index].transform.position += pausePos;
 		}
+		playBtnAudio =  playButtons [index].GetComponent<AudioSource> ();
+		playBtnAudio.Play ();
 	}
 
 
