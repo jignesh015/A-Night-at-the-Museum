@@ -88,6 +88,7 @@ public class PlayVideo : MonoBehaviour {
 
 
 	public void StartTour(int btnIndex) {
+		pointerFlag = false;
 		startScreenAudio.Play ();
 		if (btnIndex == 10) {
 			//welcomeScreen.transform.GetChild (0).gameObject.SetActive (false);
